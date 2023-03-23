@@ -1,0 +1,7 @@
+{
+  "xsappname": "zbtpday5exercise1marana",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [],
+  "role-templates": []
+}

@@ -1,0 +1,20 @@
+<mvc:View controllerName="zrouting.day5exercise2marana.controller.HomePage" xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true" xmlns="sap.m">
+    <Shell id="shell">
+		<App>
+			<pages>
+				<Page title="{i18n>detailViewPage}" showNavButton="true" navButtonPress="onNavBack" class="sapUiResponsiveContentPadding">
+					<content>
+						<VBox>
+							<Label text="{i18n>Value1}" labelFor="idInput1"/>
+							<Input id="idInput1" width="20%" editable="false" placeholder="{i18n>InputPlaceholder}" valueStateText="{i18n>ValueStateText}"/>
+							<Label text="{i18n>Value2}" labelFor="idInput1"/>
+							<Input id="idInput2" width="20%" editable="false" placeholder="{i18n>InputPlaceholder}" valueStateText="{i18n>ValueStateText}"/>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+
+</mvc:View>

@@ -1,0 +1,120 @@
+{
+  "_version": "1.49.0",
+  "sap.app": {
+    "id": "zrouting.day5exercise2marana",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.9.2",
+      "toolsId": "771a6f66-ba5f-4810-bde9-75b432762889"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.111.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "zrouting.day5exercise2marana.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [{
+        "uri": "css/style.css"
+      }]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "zrouting.day5exercise2marana.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [{
+        "name": "RouteHomePage",
+        "pattern": ":?query:",
+        "target": [
+          "TargetHomePage"
+        ]
+      },
+    {
+                    "name": "Detail",
+                    "pattern": "RouteDetail/{Param1}/{Param2}",
+                    "target": [
+                        "Detail"
+                    ]
+                }
+    ],
+      "targets": {
+        "TargetHomePage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "HomePage",
+          "viewName": "HomePage"
+        },
+        "Detail": {
+
+          "viewId": "Detail",
+
+          "viewName": "Detail"
+
+        }
+
+      }
+
+    },
+
+    "rootView": {
+      "viewName": "zrouting.day5exercise2marana.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+
+}
